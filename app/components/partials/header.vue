@@ -1,26 +1,25 @@
 <template>
   <header class="flex items-center py-4 md:py-8">
     <div class="header__logo">
-      <nuxt-link to="/">
+      <nuxt-link to="/" class="flex items-center">
         <img :src="logo" alt="Logo" />
+        <span class="ml-2">pay2fish</span>
       </nuxt-link>
     </div>
 
     <nav class="nav ml-auto">
-      <ul class=" flex flex-row items-center sm:mt-4 sm:pt-4 md:mt-0 md:pt-0 md:mr-4 lg:mr-8">
-        <li>
-          <nuxt-link to="/blog" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-            Blog
-          </nuxt-link>
-        </li>
+      <ul class="flex flex-row items-center sm:mt-4 sm:pt-4 md:mt-0 md:pt-0 md:mr-4 lg:mr-8">
+        <!-- <li>
+          <nuxt-link to="/blog" class="block font-medium px-4 py-1 md:p-2 lg:px-4">Blog</nuxt-link>
+        </li>-->
 
-        <li
+        <!-- <li
           v-for="(page, index) in pages"
           :key="index"
           class="block font-medium px-4 py-1 md:p-2 lg:px-4"
         >
           <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
-        </li>
+        </li>-->
       </ul>
     </nav>
   </header>
